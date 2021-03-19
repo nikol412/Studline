@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/subjectsFragment">
+
+
+    <fragment
+        android:id="@+id/subjectsFragment"
+        android:name="com.nikol412.studline.ui.subjects.SubjectsFragment"
+        android:label="fragment_subjects"
+        tools:layout="@layout/fragment_subjects" />
+
+    <fragment
+        android:id="@+id/currentSubjectFragment"
+        android:name="com.nikol412.studline.ui.currentSubject.CurrentSubjectFragment"
+        android:label="fragment_subjects"
+        tools:layout="@layout/fragment_current_subject" />
+
+    <fragment
+        android:id="@+id/subjectDescriptionFragment"
+        android:name="com.nikol412.studline.ui.currentSubjectDescription.SubjectDescriptionFragment"
+        android:label="subject_description"
+        tools:layout="@layout/fragment_subject_description" />
+</navigation>
